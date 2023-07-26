@@ -27,9 +27,15 @@ with st.container():
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
-    
-    
-plt.hist(x=df['calories'])
-plt.show()
+
+
+with st.container():    
+    fig, ax = plt.subplots(figsize=(12, 6))
+    ax.bar(df["name"], df["calories"])
+    ax.set_xlabel("Cereal")
+    ax.set_ylabel("Calories")
+    ax.set_title("Calories Comparison of Cereals")
+    plt.xticks(rotation=90)
+    st.pyplot(fig)
 
 
