@@ -13,6 +13,7 @@ st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout=
 with st.container():
     st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
     st.write("[Dataset URL](https://www.kaggle.com/datasets/crawford/80-cereals)")
+    st.write("[Streamlit Cheat Sheet] (https://docs.streamlit.io/library/cheatsheet)")
     st.subheader("Below is the full dataset we will be using for our demonstration.")
     st.write(df)
 st.write("------------------------------------------------------------------------------")
@@ -66,7 +67,10 @@ with st.container():
     st.pyplot(fig)
 st.write("------------------------------------------------------------------------------")
 
+
 with st.container():
     st.title("A Youtube video embeded onto Streamlit!")
     youtube_url = "https://www.youtube.com/watch?v=VqgUkExPvLY&t=371s&ab_channel=CodingIsFun"
     st.video(youtube_url)
+st.write("------------------------------------------------------------------------------")
+
