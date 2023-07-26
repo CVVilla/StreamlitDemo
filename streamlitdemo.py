@@ -23,12 +23,11 @@ with st.container():
 #after selecting a cereal brand, information regarding brand is displayed onto the user
 with st.container():
     st.subheader("Select a cereal brand below from the dataset")
-    cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique())
-    calories = df['calories']
+    cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique()) 
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
-    st.write(calories)
+    
     
 
 
