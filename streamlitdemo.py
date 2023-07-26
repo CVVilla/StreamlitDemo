@@ -18,7 +18,7 @@ with st.container():
     st.write(df)
 st.write("------------------------------------------------------------------------------")
 
-"""
+
 
 #A selection option for choosing desired cereal brand
 #after selecting a cereal brand, information regarding brand is displayed onto the user
@@ -36,9 +36,7 @@ with st.container():
     st.write(cereal_info)
 st.write("------------------------------------------------------------------------------")
 
-"""
 
-"""
 
 #A barchart showing a comparison of calories between all brands and the descriptive statistics of calories
 with st.container():
@@ -54,9 +52,7 @@ with st.container():
     st.pyplot(fig)
 st.write("------------------------------------------------------------------------------")
 
-"""
 
-"""
 
 with st.container():
     st.title("Interactive Scatter Plot to Compare Brand Rating")
@@ -74,9 +70,7 @@ with st.container():
     st.pyplot(fig)
 st.write("------------------------------------------------------------------------------")
 
-"""
 
-"""
 
 with st.container():
     st.title("A Youtube video embeded onto Streamlit!")
@@ -84,4 +78,4 @@ with st.container():
     st.video(youtube_url)
 st.write("------------------------------------------------------------------------------")
 
-"""
+
