@@ -28,5 +28,5 @@ cereals_name = st.selectbox("Choose a Cereal Brand", cereals['name'].unique())
 name = cereals[cereals['name'] == cereals_name]
 
 st.header("Selected: {cereals_name}")
-st.wrtie(name)
+st.write(name)
 
