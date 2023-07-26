@@ -9,7 +9,7 @@ Original file is located at
 
 #download streamlit dependencies
 #pip install streamlit
-pip install matplotlib
+#pip install matplotlib
 
 #IMPORT Streamlit
 import streamlit as st
