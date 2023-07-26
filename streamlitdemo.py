@@ -56,8 +56,8 @@ with st.container():
     st.title("Interactive Scatter Plot to Compare Brand Rating")
     st.write(df['rating'].describe())
 
-    search_term = st.text_input("Search for a cereal:", "")
-    filtered_df = df[df["name"].str.contains(search_term, case=False)]
+    search_term
+    filtered_df
     
     st.write(filtered_df)
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
