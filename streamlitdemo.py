@@ -59,7 +59,7 @@ with st.container():
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
     filtered_df = df[df["name"].isin(selected_brands)]
     fig, ax = plt.subplots(figsize=(10, 6))
-    ax.scatter(filtered_df["name"], filtered_df["rating"], c=filtered_df["rating"], cmap="inferno", alpha=0.7)
+    ax.scatter(filtered_df["name"], filtered_df["rating"], c=filtered_df["rating"], cmap="coolwarm", alpha=0.7)
     ax.set_xlabel("Cereal Brand")
     ax.set_ylabel("Ratings")
     ax.set_title("Distribution of Ratings by Cereal Brands")
