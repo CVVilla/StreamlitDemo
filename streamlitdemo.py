@@ -55,9 +55,6 @@ st.write("----------------------------------------------------------------------
 with st.container():
     st.title("Interactive Scatter Plot to Compare Brand Rating")
     st.write(df['rating'].describe())
-
-    search_term
-    filtered_df
     
     st.write(filtered_df)
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
