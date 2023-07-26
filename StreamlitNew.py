@@ -10,3 +10,5 @@ st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout=
 
 with st.container():
   st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
+  st.subheader("Below is the full dataset we will be using for our demonstration.")
+  st.write(df)
