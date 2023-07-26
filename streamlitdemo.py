@@ -52,7 +52,7 @@ st.write("----------------------------------------------------------------------
 
 
 with st.container():
-    st.title("Scatter plot for Brand Ratings")
+    st.title("Interactive Scatter Plot to Compare Brand Rating")
     st.write(df['rating'].describe())
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
     filtered_df = df[df["name"].isin(selected_brands)]
