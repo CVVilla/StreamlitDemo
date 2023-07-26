@@ -19,8 +19,9 @@ cereals = pd.read_csv("cereal.csv")
 
 #Create a page title for the page
 #Emojis can be used as icons from https://www.webfx.com/tools/emoji-cheat-sheet/
+st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout='wide')
+
 with st.container():
-    st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout='wide')
     st.subheader("This is a Streamlit demonstration!")
     st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
 
