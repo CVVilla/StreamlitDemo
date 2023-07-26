@@ -27,7 +27,7 @@ with st.container():
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
-
+st.write("------------------------------------------------------------------------------")
 
 
 
