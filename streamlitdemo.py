@@ -29,7 +29,7 @@ with st.container():
     # Filter the DataFrame based on the search term
     filtered_df = df[df["name"].str.contains(search_term, case=False)]
     # Display the filtered results as a table
-    st.table(filtered_df)
+    st.write(filtered_df)
 
     cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique()) 
     cereal_info = df[df['name'] == cereals_name]
