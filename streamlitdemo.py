@@ -23,7 +23,10 @@ st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout=
 st.subheader("This is a Streamlit demonstration!")
 st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
 
+
 #A selection option for choosing desired cereal brand
+#after selecting a cereal brand, information regarding brand is displayed onto the user
+st.write(cereals)
 cereals_name = st.selectbox("Choose a Cereal Brand", cereals['name'].unique())
 cereal_info = cereals[cereals['name'] == cereals_name]
 
