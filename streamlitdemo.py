@@ -30,6 +30,6 @@ with st.container():
     
     
 plt.hist(x=df['calories'])
-pt.show()
+plt.show()
 
 
