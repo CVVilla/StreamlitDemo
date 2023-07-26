@@ -8,7 +8,7 @@ Original file is located at
 """
 
 #download streamlit dependencies
-pip install streamlit
+#pip install streamlit
 
 #IMPORT Streamlit
 import streamlit as st
