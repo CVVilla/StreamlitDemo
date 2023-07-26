@@ -27,6 +27,6 @@ st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
 cereals_name = st.selectbox("Choose a Cereal Brand", cereals['name'].unique())
 name = cereals[cereals['name'] == cereals_name]
 
-st.header("Selected: {name}")
+st.header("Selected:" {name})
 st.write(name)
 
