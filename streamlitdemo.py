@@ -3,8 +3,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
 #import our csv file
 df = pd.read_csv("cereal.csv")
 
@@ -42,6 +40,7 @@ st.write("----------------------------------------------------------------------
 with st.container():
     st.title("Calories Comparison Descriptive Statistics")
     st.write(df['calories'].describe())
+    
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.bar(df["name"], df["calories"])
     ax.set_xlabel("Cereal")
@@ -55,6 +54,7 @@ st.write("----------------------------------------------------------------------
 with st.container():
     st.title("Interactive Scatter Plot to Compare Brand Rating")
     st.write(df['rating'].describe())
+    
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
     filtered_df = df[df["name"].isin(selected_brands)]
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -64,3 +64,9 @@ with st.container():
     ax.set_title("Distribution of Ratings by Cereal Brands")
     plt.xticks(rotation=90)
     st.pyplot(fig)
+st.write("------------------------------------------------------------------------------")
+
+with st.container():
+    st.title("A Youtube video embeded onto Streamlit!")
+    youtube_url = "https://www.youtube.com/watch?v=VqgUkExPvLY&t=371s&ab_channel=CodingIsFun"
+    st.video(youtube_url)
