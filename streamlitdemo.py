@@ -56,7 +56,7 @@ with st.container():
     st.title("Interactive Scatter Plot to Compare Brand Rating")
     st.write(df['rating'].describe())
     
-    st.write(filtered_df)
+    
     selected_brands = st.multiselect("Select Cereal Brands", df["name"])
     filtered_df = df[df["name"].isin(selected_brands)]
     fig, ax = plt.subplots(figsize=(10, 6))
