@@ -23,7 +23,7 @@ st.write("----------------------------------------------------------------------
 #after selecting a cereal brand, information regarding brand is displayed onto the user
 with st.container():
     st.subheader("Below is a Demonstration of a Suggestive Seach bar and a drop down menu for selecting elements from the dataset")
-    st.title("Suggestive Search Bar")
+    st.title("Search Bar")
     search_term = st.text_input("Search for a cereal:", "")
     filtered_df = df[df["name"].str.contains(search_term, case=False)]
     st.write(filtered_df)
