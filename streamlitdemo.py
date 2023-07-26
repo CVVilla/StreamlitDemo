@@ -39,7 +39,7 @@ st.write("----------------------------------------------------------------------
 
 #A barchart showing a comparison of calories between all brands and the descriptive statistics of calories
 with st.container():
-    st.title("Below Shows the caloric comparison of cereal brands")
+    st.title("Calories Comparison Descriptive Statistics")
     st.write(df['calories'].describe())
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.bar(df["name"], df["calories"])
