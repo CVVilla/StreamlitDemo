@@ -19,4 +19,18 @@ st.write("----------------------------------------------------------------------
 
 
 
+#A selection option for choosing desired cereal brand
+#after selecting a cereal brand, information regarding brand is displayed onto the user
+with st.container():
+    st.subheader("Below is a Demonstration of a Suggestive Seach bar and a drop down menu for selecting elements from the dataset")
+    st.title("Search Bar")
+    search_term = st.text_input("Search for a cereal:", "")
+    filtered_df = df[df["name"].str.contains(search_term, case=False)]
+    st.write(filtered_df)
 
+    st.title("Drop Down Menu")
+    cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique()) 
+    cereal_info = df[df['name'] == cereals_name]
+    st.header(f"Selected: {cereals_name}")
+    st.write(cereal_info)
+st.write("------------------------------------------------------------------------------")
