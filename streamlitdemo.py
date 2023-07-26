@@ -24,16 +24,12 @@ with st.container():
 with st.container():
     st.subheader("Select a cereal brand below from the dataset")
     cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique())
+    calories = df[df['calories'] == cereals_name]
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
+    st.write(calories)
     
-fig, ax = plt.subplots(figsize=(13, 7))
-ax.bar(df["name"], df["calories"])
-ax.set_xlabel("Cereal")
-ax.set_ylabel("Calories")
-ax.set_title("Calories Comparison of Cereals")
-plt.xticks(rotation=90)
-st.pyplot(fig)
+
 
 
