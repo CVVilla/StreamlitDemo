@@ -16,7 +16,7 @@ with st.container():
     st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
     st.subheader("Below is the full dataset we will be using for our demonstration.")
     st.write(df)
-
+st.write("------------------------------------------------------------------------------")
 
 
 #A selection option for choosing desired cereal brand
@@ -29,6 +29,9 @@ with st.container():
     st.write(cereal_info)
 
 
+
+
+#A barchart showing a comparison of calories between all brands and the descriptive statistics of calories
 with st.container():
     st.title("Below Shows the caloric comparison of cereal brands")
     st.write(df['calories'].describe())
