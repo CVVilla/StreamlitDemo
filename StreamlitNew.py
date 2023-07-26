@@ -70,3 +70,10 @@ with st.container():
     st.pyplot(fig)
 st.write("------------------------------------------------------------------------------")
 
+
+
+with st.container():
+    st.title("A Youtube video embeded onto Streamlit!")
+    youtube_url = "https://www.youtube.com/watch?v=VqgUkExPvLY&t=371s&ab_channel=CodingIsFun"
+    st.video(youtube_url)
+st.write("------------------------------------------------------------------------------")
