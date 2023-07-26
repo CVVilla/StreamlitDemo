@@ -48,6 +48,16 @@ with st.container():
     ax.set_title("Calories Comparison of Cereals")
     plt.xticks(rotation=90)
     st.pyplot(fig)
-    
+st.write("------------------------------------------------------------------------------")
 
 
+with st.container():
+    st.title("Scatter plot for Brand Ratings")
+    st.write(df['rating'].describe())
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.scatter(df["name"], df["rating"], alpha=0.7)
+    ax.set_xlabel("Cereal Brand")
+    ax.set_ylabel("Ratings")
+    ax.set_title("Distribution of Ratings by Cereal Brands")
+    plt.xticks(rotation=90)
+    st.pyplot(fig)
