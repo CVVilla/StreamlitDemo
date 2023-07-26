@@ -11,6 +11,7 @@ Original file is located at
 #pip install streamlit
 #IMPORT Streamlit
 import streamlit as st
+import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -37,6 +38,7 @@ with st.container():
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
+    
 
 
 
