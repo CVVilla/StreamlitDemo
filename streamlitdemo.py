@@ -22,12 +22,11 @@ cereals = pd.read_csv("cereal.csv")
 st.set_page_config(page_title="Cereals!", page_icon=":bowl_with_spoon:", layout='wide')
 
 with st.container():
-    st.subheader("This is a Streamlit demonstration!")
     st.title("A Streamlit analysis demonstration using the Cereals Dataset!")
+    st.subheader("Below is the full dataset we will be using for our demonstration.")
+    st.write(cereals)
 
 
-
-st.write(cereals)
 
 #A selection option for choosing desired cereal brand
 #after selecting a cereal brand, information regarding brand is displayed onto the user
