@@ -29,7 +29,8 @@ with st.container():
     st.write(cereal_info)
 
 
-with st.container():    
+with st.container():
+    st.title("Below Shows the caloric comparison of cereal brands")
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.bar(df["name"], df["calories"])
     ax.set_xlabel("Cereal")
