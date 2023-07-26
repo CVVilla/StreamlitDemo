@@ -29,6 +29,7 @@ with st.container():
     st.write(cereal_info)
     
     
-
+plt.hist(x=df['calories'])
+pt.show()
 
 
