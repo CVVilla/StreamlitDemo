@@ -10,7 +10,6 @@ Original file is located at
 
 #IMPORT Streamlit
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 
 
