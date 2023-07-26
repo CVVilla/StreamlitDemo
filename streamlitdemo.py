@@ -24,7 +24,7 @@ with st.container():
 with st.container():
     st.subheader("Select a cereal brand below from the dataset")
     cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique())
-    calories = df[df['calories'] == cereals_name]
+    calories = df[df['calories']]
     cereal_info = df[df['name'] == cereals_name]
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
