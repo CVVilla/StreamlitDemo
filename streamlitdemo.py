@@ -31,13 +31,6 @@ with st.container():
 
 with st.container():
     st.title("Below Shows the caloric comparison of cereal brands")
-    # Sidebar with a filter for selecting cereals
-    selected_cereal = st.sidebar.selectbox("Select a cereal:", df["name"])
-    # Filter the DataFrame to get the selected cereal's calories
-    selected_cereal_calories = df[df["name"] == selected_cereal]["calories"].values[0]
-    # Display the selected cereal and its calories
-    st.write(f"Selected Cereal: {selected_cereal}")
-    st.write(f"Calories: {selected_cereal_calories}")
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.bar(df["name"], df["calories"])
     ax.set_xlabel("Cereal")
