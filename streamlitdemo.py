@@ -28,7 +28,7 @@ with st.container():
     st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
     
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(5, 3))
 ax.bar(df["name"], df["calories"])
 ax.set_xlabel("Cereal")
 ax.set_ylabel("Calories")
