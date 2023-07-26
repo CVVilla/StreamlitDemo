@@ -38,5 +38,6 @@ with st.container():
     ax.set_title("Calories Comparison of Cereals")
     plt.xticks(rotation=90)
     st.pyplot(fig)
+    st.write(df['calories'].describe())
 
 
