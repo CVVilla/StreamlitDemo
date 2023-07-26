@@ -29,11 +29,11 @@ with st.container():
     st.write(cereal_info)
     
 fig, ax = plt.subplots(figsize=(10, 6))
-    ax.bar(df["name"], df["calories"])
-    ax.set_xlabel("Cereal")
-    ax.set_ylabel("Calories")
-    ax.set_title("Calories Comparison of Cereals")
-    plt.xticks(rotation=90)
-    st.pyplot(fig)
+ax.bar(df["name"], df["calories"])
+ax.set_xlabel("Cereal")
+ax.set_ylabel("Calories")
+ax.set_title("Calories Comparison of Cereals")
+plt.xticks(rotation=90)
+st.pyplot(fig)
 
 
