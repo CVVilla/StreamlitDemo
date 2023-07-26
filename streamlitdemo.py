@@ -30,11 +30,13 @@ with st.container():
 
 #A selection option for choosing desired cereal brand
 #after selecting a cereal brand, information regarding brand is displayed onto the user
-cereals_name = st.selectbox("Choose a Cereal Brand", cereals['name'].unique())
-cereal_info = cereals[cereals['name'] == cereals_name]
+with st.container():
+    st.subheader("Select a cereal brand below from the dataset")
+    cereals_name = st.selectbox("Choose a Cereal Brand", cereals['name'].unique())
+    cereal_info = cereals[cereals['name'] == cereals_name]
 
-st.header(f"Selected: {cereals_name}")
-st.write(cereal_info)
+    st.header(f"Selected: {cereals_name}")
+    st.write(cereal_info)
 
 
 
