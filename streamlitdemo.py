@@ -32,7 +32,6 @@ with st.container():
     st.title("Drop Down Menu")
     cereals_name = st.selectbox("Choose a Cereal Brand", df['name'].unique()) 
     cereal_info = df[df['name'] == cereals_name]
-    st.header(f"Selected: {cereals_name}")
     st.write(cereal_info)
 st.write("------------------------------------------------------------------------------")
 
